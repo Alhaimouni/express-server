@@ -16,10 +16,7 @@ it('testing main route', async ()=>{
 
 it('Testing person route',async()=>{
 
-    const response = await request.get('/person');
-
+    const response = await request.post('/person');
     expect(typeof response.body).toEqual('object');
 })
-
-
 })
